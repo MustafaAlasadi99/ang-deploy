@@ -1,0 +1,52 @@
+<h1>Checkout</h1>
+
+<a routerLink="/">
+  <div id="buttonContainer">
+  <button class="button button3">Logout</button>
+  </div>
+</a>
+
+<a routerLink="/products">
+  <div id="button3Container">
+  <button class="button button3">Products</button>
+  </div>
+</a>
+
+
+  <div class="container" id="{{display_control$}}" >
+
+    <table class="table table-hover table-dark">
+      <thead>
+        <tr>
+          <th scope="col">Item Name</th>
+          <th scope="col">Quantity</th>
+        </tr>
+      </thead>
+      <tbody>
+          <tr *ngFor="let i of SessionData">
+
+          <td>{{i.key}}</td>
+          <td><input type="text" placeholder={{i.value}} name="fname" size="3"></td>
+          <td><a class="myButton">Update</a></td>
+        </tr>
+
+
+      </tbody>
+    </table>
+
+
+
+      <div id="button2Container">
+      <button class="button button4"> <a routerLink="/confirmation">Confirm Purchase </a></button>
+      </div>
+
+
+
+    </div>
+
+
+<br>
+
+<div id="empty-cart">
+{{Cart$}}
+</div>
