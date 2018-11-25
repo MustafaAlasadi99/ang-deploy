@@ -57,11 +57,11 @@
 </div>
 
 
-<div id="description2">{{product$.description.description}}</div>
+<div id="description2" *ngIf="product$" >{{product$.description.description}}</div>
 <br>
 
 
-<img id="myimg" src="{{product$.image.imgurl}}" alt="Paris" style="width:150;border:3px solid;" class="center">
+<img *ngIf="product$" id="myimg" src="{{product$.image.imgurl}}" alt="Paris" style="width:150;border:3px solid;" class="center">
 
 
 
