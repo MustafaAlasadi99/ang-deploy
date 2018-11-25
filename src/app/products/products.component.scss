@@ -88,3 +88,21 @@ h1{
   padding-left:2%;
 
 }
+
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen and (max-width: 480px) {
+
+.container{
+
+  width:100%;
+  font-size:0.8em;
+}
+
+.myButton{
+
+  font-size: 0.5em;
+}
+
+
+}
